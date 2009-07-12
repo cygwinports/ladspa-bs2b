@@ -1,0 +1,11 @@
+--- origsrc/ladspa-bs2b-0.9.1/src/Makefile.am	2009-05-29 17:28:32.000000000 -0500
++++ src/ladspa-bs2b-0.9.1/src/Makefile.am	2009-07-12 01:30:40.185363200 -0500
+@@ -7,7 +7,7 @@ AM_CFLAGS = @BS2B_CFLAGS@
+ # 5.2.1. Special functions _init and _fini
+ # http://tldp.org/HOWTO/Program-Library-HOWTO/miscellaneous.html#INIT-AND-FINI-OBSOLETE
+ bs2b_la_LDFLAGS = @BS2B_LIBS@ \
+-	-module -Wc,-nostartfiles -avoid-version
++	-module -avoid-version -no-undefined -shrext ".so"
+ 
+ bs2b_la_SOURCES = \
+ 	plugin.c

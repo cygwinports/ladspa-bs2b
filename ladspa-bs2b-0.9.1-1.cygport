@@ -1,0 +1,4 @@
+DESCRIPTION="LADSPA stereophonic-to-binaural plugin"
+HOMEPAGE="http://bs2b.sourceforge.net/"
+SRC_URI="mirror://sourceforge/bs2b/${P}.tar.lzma"
+PATCH_URI="0.9.1-libtool-ldflags.patch"
